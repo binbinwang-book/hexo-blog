@@ -1,0 +1,38 @@
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSString *uid = @"uid123";
+    NSString *pwd = @"pwd123";
+    // 先注册，注册成功之后去登录
+    [self signUpWithUserName:uid pwd:pwd resultBlock:^(BOOL success, NSString *message) {
+        if (success) {
+            [self signInWithUserName:uid pwd:pwd resultBlock:^(BOOL success, NSString *message) {
+                if (success) {
+                    NSLog(@"登录成功,uid:%@",uid);
+                }
+            }];
+        }
+    }];
+}
+
+- (void)signUpWithUserName:(NSString *)uid
+                       pwd:(NSString *)pwd
+               resultBlock:(void(^)(BOOL success, NSString *message))resultBlock {
+    if (resultBlock) {
+        resultBlock(YES,uid);
+    }
+}
+
+- (void)signInWithUserName:(NSString *)uid
+                       pwd:(NSString *)pwd
+               resultBlock:(void(^)(BOOL success, NSString *message))resultBlock {
+    if (resultBlock) {
+        resultBlock(YES,uid);
+    }
+}
