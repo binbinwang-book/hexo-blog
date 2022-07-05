@@ -12,7 +12,7 @@
     "version": "6.0.0"
   },
   "dependencies": {
-    "bulma-stylus": "^0.8.0",
+    "bulma-stylus": "^0.9.1",
     "hexo": "^6.0.0",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.1.6",
