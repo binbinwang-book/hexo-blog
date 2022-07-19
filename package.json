@@ -16,7 +16,7 @@
     "hexo": "^6.0.0",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.1.6",
-    "hexo-component-inferno": "^1.1.0",
+    "hexo-component-inferno": "^1.2.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-github-emojis": "^3.0.4",
     "hexo-generator-archive": "^1.0.0",
